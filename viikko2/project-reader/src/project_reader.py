@@ -13,4 +13,5 @@ class ProjectReader:
         data = read['tool']['poetry']
 
         # deserialisoi TOML-formaatissa oleva merkkijono ja muodosta Project-olio sen tietojen perusteella
-        return Project(data['name'], data['description'], data['dependencies'], data['group']['dev']['dependencies'])
+        return Project(data['name'], data['description'], data['license'], data['authors'], data['dependencies'],
+                       data['group']['dev']['dependencies'])
