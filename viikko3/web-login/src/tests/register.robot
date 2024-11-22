@@ -5,7 +5,6 @@ Suite Teardown  Close Browser
 Test Setup      Reset Application Create User And Go To Register Page
 
 *** Test Cases ***
-
 Register With Valid Username And Password
     Set Username  anne
     Set Password  anne1234
@@ -47,6 +46,12 @@ Register With Username That Is Already In Use
     Set Password Confirmation  kalle123
     Submit Credentials
     Register Should Fail With Message  User with username kalle already exists
+
+Login After Successful Registration
+    
+
+Login After Failed Registration
+# ...
 
 *** Keywords ***
 Register Should Succeed
