@@ -8,12 +8,7 @@ class And:
                 return False
 
         return True
-    
 
-class All:
-    def test(self, player):
-        return True
-    
 
 class Or:
     def __init__(self, *matchers):
@@ -25,6 +20,11 @@ class Or:
                 return True
 
         return False
+
+
+class All:
+    def test(self, player):
+        return True
 
 
 class PlaysIn:
@@ -52,7 +52,7 @@ class Not:
 
     def test(self, player):
         return not self._cond.test(player)
-    
+
 
 class HasFewerThan:
     def __init__(self, value, attr):
