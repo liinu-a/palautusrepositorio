@@ -1,0 +1,1 @@
+[Mergetty pull request](https://github.com/tkontt/SmartCite/commit/73f315864dd8162e9cfa6096ab33e5d2cf281088)
